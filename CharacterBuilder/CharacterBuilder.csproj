@@ -46,14 +46,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes\CharacterRaces\Character.cs" />
+    <Compile Include="Classes\CharacterRaces\Player.cs" />
+    <Compile Include="Classes\CharacterRaces\Dwarf.cs" />
+    <Compile Include="Classes\CharacterRaces\Elf.cs" />
+    <Compile Include="Classes\CharacterRaces\Entity.cs" />
+    <Compile Include="Classes\CharacterRaces\Human.cs" />
+    <Compile Include="frmBeginCharacter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmBeginCharacter.Designer.cs">
+      <DependentUpon>frmBeginCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplayCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplayCharacter.Designer.cs">
+      <DependentUpon>frmDisplayCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCharacterClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCharacterClass.Designer.cs">
+      <DependentUpon>frmSelectCharacterClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectCharacterRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectCharacterRace.Designer.cs">
+      <DependentUpon>frmSelectCharacterRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSetCharacterAbilityStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetCharacterAbilityStats.Designer.cs">
+      <DependentUpon>frmSetCharacterAbilityStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcome.Designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBeginCharacter.resx">
+      <DependentUpon>frmBeginCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisplayCharacter.resx">
+      <DependentUpon>frmDisplayCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCharacterClass.resx">
+      <DependentUpon>frmSelectCharacterClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectCharacterRace.resx">
+      <DependentUpon>frmSelectCharacterRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetCharacterAbilityStats.resx">
+      <DependentUpon>frmSetCharacterAbilityStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\CharacterClasses\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
