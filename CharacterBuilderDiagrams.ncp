@@ -1,0 +1,422 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>FormDiagrams</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Form</Name>
+        <Access>Public</Access>
+        <Location left="629" top="62" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>frmWelcome</Name>
+        <Access>Public</Access>
+        <Location left="73" top="392" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>frmBeginCharacter</Name>
+        <Access>Public</Access>
+        <Location left="336" top="392" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int health</Member>
+        <Member type="Field">string name</Member>
+        <Member type="Field">EntityGender eGender</Member>
+        <Member type="Field">string age</Member>
+        <Member type="Field">string heightFeet</Member>
+        <Member type="Field">string heightInches</Member>
+        <Member type="Field">string weight</Member>
+        <Member type="Field">EntityEyeColor eyeColor</Member>
+        <Member type="Field">EntityHairColor hairColor</Member>
+        <Member type="Field">string skin</Member>
+        <Member type="Constructor">public frmBeginCharacter()</Member>
+        <Member type="Destructor">~frmBeginCharacter()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>frmSelectCharacterRace</Name>
+        <Access>Public</Access>
+        <Location left="602" top="392" />
+        <Size width="184" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Player playerPickingRace</Member>
+        <Member type="Method">private void setCharacterRace()</Member>
+        <Member type="Constructor">public frmSelectCharacterRace()</Member>
+        <Member type="Method">private void setRaceTraits()</Member>
+        <Member type="Constructor">public frmSelectCharacterRace()</Member>
+        <Member type="Method">private void setAdditionalStats()</Member>
+        <Member type="Method">private void setAdditionalTraits()</Member>
+        <Member type="Method">private void setResistances()</Member>
+        <Member type="Method">private void setLanguages()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>frmSelectCharacterClass</Name>
+        <Access>Public</Access>
+        <Location left="875" top="392" />
+        <Size width="180" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Player playerPickingClass</Member>
+        <Member type="Constructor">public frmSelectCharacterClass()</Member>
+        <Member type="Constructor">public frmSelectCharacterClass()</Member>
+        <Member type="Method">private void setCharacterClass()</Member>
+        <Member type="Method">private void setClassTraits()</Member>
+        <Member type="Method">private void setClassArmor()</Member>
+        <Member type="Method">private void setClassWeaponsAndAttack()</Member>
+        <Member type="Method">private void setClassSkilss()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>frmSetCharacterAbilityStats</Name>
+        <Access>Public</Access>
+        <Location left="1141" top="394" />
+        <Size width="162" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Player playerSetStatus</Member>
+        <Member type="Field">bool strSet</Member>
+        <Member type="Field">bool dexSet</Member>
+        <Member type="Field">bool conSet</Member>
+        <Member type="Field">bool intSet</Member>
+        <Member type="Field">bool wisSet</Member>
+        <Member type="Field">bool chaSet</Member>
+        <Member type="Method">public int GetRandomNumber()</Member>
+        <Member type="Method">private void setCharacterStats()</Member>
+        <Member type="Constructor">public frmSetCharacterAbilityStats()</Member>
+        <Member type="Constructor">public frmSetCharacterAbilityStats()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>frmDisplayCharacter</Name>
+        <Access>Public</Access>
+        <Location left="1403" top="392" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Player displayingPlayer</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="3" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="4" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="6" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Classes</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Entity</Name>
+        <Access>Public</Access>
+        <Location left="389" top="66" />
+        <Size width="308" height="1131" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected int intHealth</Member>
+        <Member type="Field">protected string strName</Member>
+        <Member type="Field">protected EntityGender entGender</Member>
+        <Member type="Field">protected int age</Member>
+        <Member type="Field">protected int intHeightFeet</Member>
+        <Member type="Field">protected int intHeightInches</Member>
+        <Member type="Field">protected string strWeight</Member>
+        <Member type="Field">protected EntityEyeColor entEyeColor</Member>
+        <Member type="Field">protected EntityHairColor entHairColor</Member>
+        <Member type="Field">protected string strSkin</Member>
+        <Member type="Field">protected int intStrengthAbility</Member>
+        <Member type="Field">protected int intDexterityAbility</Member>
+        <Member type="Field">protected int intConstitutionAbility</Member>
+        <Member type="Field">protected int intIntelligenceAbility</Member>
+        <Member type="Field">protected int intWisdomAbility</Member>
+        <Member type="Field">protected int intCharismaAbility</Member>
+        <Member type="Field">protected string strStrengthModifier</Member>
+        <Member type="Field">protected string strDexterityModifier</Member>
+        <Member type="Field">protected string strConstitutionModifier</Member>
+        <Member type="Field">protected string strInteliigenceModifer</Member>
+        <Member type="Field">protected string strWisdomModifier</Member>
+        <Member type="Field">protected string strCharismaModifier</Member>
+        <Member type="Field">protected string strStrengthSaving</Member>
+        <Member type="Field">protected string strDexteritSaving</Member>
+        <Member type="Field">protected string strConstitutionSaving</Member>
+        <Member type="Field">protected string strIntelligenceSaving</Member>
+        <Member type="Field">protected string strWisdomSaving</Member>
+        <Member type="Field">protected string strCharismaSaving</Member>
+        <Member type="Property">public int Health { get; protected set; }</Member>
+        <Member type="Property">public string Name { get; protected set; }</Member>
+        <Member type="Property">public EntityGender Gender { get; protected set; }</Member>
+        <Member type="Property">public int Age { get; protected set; }</Member>
+        <Member type="Property">public int HeightFeet { get; protected set; }</Member>
+        <Member type="Property">public int HeightInches { get; protected set; }</Member>
+        <Member type="Property">public string Weight { get; protected set; }</Member>
+        <Member type="Property">public EntityEyeColor EyeColor { get; protected set; }</Member>
+        <Member type="Property">public EntityHairColor HairColor { get; protected set; }</Member>
+        <Member type="Property">public string Skin { get; protected set; }</Member>
+        <Member type="Property">public EntityCharacterRace CharacterRace { get; set; }</Member>
+        <Member type="Property">public EntityCharacterClass CharacterClass { get; set; }</Member>
+        <Member type="Property">public EntityArmor Armor { get; set; }</Member>
+        <Member type="Property">public EntityWeapons Weapon { get; set; }</Member>
+        <Member type="Property">public EntityAttacks Attack { get; set; }</Member>
+        <Member type="Property">public int StrengthAbility { get; set; }</Member>
+        <Member type="Property">public int DexterityAbility { get; set; }</Member>
+        <Member type="Property">public int ConstitutionAbility { get; set; }</Member>
+        <Member type="Property">public int IntelligenceAbility { get; set; }</Member>
+        <Member type="Property">public int WisdomAbility { get; set; }</Member>
+        <Member type="Property">public int CharismaAbility { get; set; }</Member>
+        <Member type="Property">public string StrengthModifier { get; set; }</Member>
+        <Member type="Property">public string DexterityModifer { get; set; }</Member>
+        <Member type="Property">public string ConstitutionModifier { get; set; }</Member>
+        <Member type="Property">public string IntelligenceModifier { get; set; }</Member>
+        <Member type="Property">public string WisdomModifier { get; set; }</Member>
+        <Member type="Property">public string CharismaModifier { get; set; }</Member>
+        <Member type="Property">public string StrengthSaving { get; set; }</Member>
+        <Member type="Property">public string DexteritySaving { get; set; }</Member>
+        <Member type="Property">public string ConstitutionSaving { get; set; }</Member>
+        <Member type="Property">public string IntelligenceSaving { get; set; }</Member>
+        <Member type="Property">public string WisdomSaving { get; set; }</Member>
+        <Member type="Property">public string CharismaSaving { get; set; }</Member>
+        <Member type="Constructor">public Entity()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityGender</Name>
+        <Access>Public</Access>
+        <Location left="1171" top="20" />
+        <Size width="162" height="98" />
+        <Collapsed>False</Collapsed>
+        <Value>Male</Value>
+        <Value>Female</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityEyeColor</Name>
+        <Access>Public</Access>
+        <Location left="1171" top="131" />
+        <Size width="162" height="146" />
+        <Collapsed>False</Collapsed>
+        <Value>Brown</Value>
+        <Value>Blue</Value>
+        <Value>Green</Value>
+        <Value>Red</Value>
+        <Value>Silver</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityHairColor</Name>
+        <Access>Public</Access>
+        <Location left="1171" top="290" />
+        <Size width="162" height="231" />
+        <Collapsed>False</Collapsed>
+        <Value>Black</Value>
+        <Value>Blonde</Value>
+        <Value>Blue</Value>
+        <Value>Brown</Value>
+        <Value>Gold</Value>
+        <Value>Green</Value>
+        <Value>Purple</Value>
+        <Value>Red</Value>
+        <Value>Silver</Value>
+        <Value>White</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityAtttacks</Name>
+        <Access>Public</Access>
+        <Location left="1172" top="536" />
+        <Size width="162" height="129" />
+        <Collapsed>False</Collapsed>
+        <Value>Area</Value>
+        <Value>Melee</Value>
+        <Value>Range</Value>
+        <Value>Spell</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityWeapons</Name>
+        <Access>Public</Access>
+        <Location left="1173" top="676" />
+        <Size width="162" height="129" />
+        <Collapsed>False</Collapsed>
+        <Value>Warhammer</Value>
+        <Value>Sword</Value>
+        <Value>Bow</Value>
+        <Value>Quarterstaff</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityCharacterRace</Name>
+        <Access>Public</Access>
+        <Location left="1175" top="818" />
+        <Size width="162" height="129" />
+        <Collapsed>False</Collapsed>
+        <Value>Dragonborn</Value>
+        <Value>Dwarf</Value>
+        <Value>Elf</Value>
+        <Value>Human</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityCharacterClass</Name>
+        <Access>Public</Access>
+        <Location left="1176" top="961" />
+        <Size width="162" height="129" />
+        <Collapsed>False</Collapsed>
+        <Value>Cleric</Value>
+        <Value>Fighter</Value>
+        <Value>Rogue</Value>
+        <Value>Wizard</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>EntityArmor</Name>
+        <Access>Public</Access>
+        <Location left="1178" top="1101" />
+        <Size width="162" height="146" />
+        <Collapsed>False</Collapsed>
+        <Value>Light</Value>
+        <Value>Medium</Value>
+        <Value>Heavy</Value>
+        <Value>All</Value>
+        <Value>None</Value>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="8" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

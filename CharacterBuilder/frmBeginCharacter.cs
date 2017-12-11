@@ -55,10 +55,14 @@ namespace CharacterBuilder
                 MessageBox.Show("You must give your character a gender.");
                 return;
             }
-            string age = txtCharacterAge.Text;
-            string heightFeet = cboHeightFeet.Text;
-            string heightInches = cboHeightInches.Text;
-            string weight = txtCharacterWeight.Text;
+            string age = "23";
+            age = txtCharacterAge.Text;
+            string heightFeet = "5";
+            heightFeet = cboHeightFeet.Text;
+            string heightInches = "7";
+            heightInches = cboHeightInches.Text;
+            string weight = "180";
+            weight = txtCharacterWeight.Text;
             EntityEyeColor eyeColor = EntityEyeColor.Blue; // = cboEyeColor.Text;
             if (cboEyeColor.Text == "Brown")
                 eyeColor = EntityEyeColor.Brown;
@@ -91,7 +95,8 @@ namespace CharacterBuilder
                 hairColor = EntityHairColor.White;
             else if (cboHairColor.Text == "Purple")
                 hairColor = EntityHairColor.Purple;
-            string skin = txtCharacterSkin.Text;
+            string skin = "weathered";
+            skin = txtCharacterSkin.Text;
 
             //int convertAge = 0;
             //int convertHeightFeet = 0;

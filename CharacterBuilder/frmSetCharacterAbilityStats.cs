@@ -36,6 +36,13 @@ namespace CharacterBuilder
 
         private void btnSetCharacterAbilityStatsContinue_Click(object sender, EventArgs e)
         {
+            if (txtStrengthStat.Text == "" || txtDexterityStat.Text == "" || txtConstitutionStat.Text == "" ||
+                txtIntelligenceStat.Text == "" || txtWisdomStat.Text == "" || txtCharismaStat.Text == "")
+            {
+                MessageBox.Show("You must have a stat for each field.");
+                return;
+            }
+
             SetCharacterStats();
 
             frmDisplayCharacter displayingCharacter = new frmDisplayCharacter(playerSetStats);
@@ -111,33 +118,51 @@ namespace CharacterBuilder
             playerSetStats.WisdomAbility += intWis;
             playerSetStats.CharismaAbility += intCha;
 
-            if (playerSetStats.StrengthAbility >= 10)
+            if (playerSetStats.StrengthAbility >= 10 && !strSet)
+            {
                 intStr = (playerSetStats.StrengthAbility - 10) / 2;
+                strSet = true;
+            }
             else
                 intStr = 0;
 
-            if (playerSetStats.DexterityAbility >= 10)
+            if (playerSetStats.DexterityAbility >= 10 && !dexSet)
+            {
                 intDex = (playerSetStats.DexterityAbility - 10) / 2;
+                dexSet = true;
+            }
             else
                 intDex = 0;
 
-            if (playerSetStats.ConstitutionAbility >= 10)
+            if (playerSetStats.ConstitutionAbility >= 10 && !conSet)
+            {
                 intCon = (playerSetStats.ConstitutionAbility - 10) / 2;
+                conSet = true;
+            }
             else
                 intCon = 0;
 
-            if (playerSetStats.IntelligenceAbility >= 10)
+            if (playerSetStats.IntelligenceAbility >= 10 && !intSet)
+            { 
                 intInt = (playerSetStats.IntelligenceAbility - 10) / 2;
+                intSet = true;
+            }
             else
                 intInt = 0;
 
-            if (playerSetStats.WisdomAbility >= 10)
+            if (playerSetStats.WisdomAbility >= 10 && !wisSet)
+            {
                 intWis = (playerSetStats.WisdomAbility - 10) / 2;
+                wisSet = true;
+            }
             else
                 intWis = 0;
 
-            if (playerSetStats.CharismaAbility >= 10)
+            if (playerSetStats.CharismaAbility >= 10 && !chaSet)
+            {
                 intCha = (playerSetStats.CharismaAbility - 10) / 2;
+                chaSet = true;
+            }
             else
                 intCha = 0;
             
